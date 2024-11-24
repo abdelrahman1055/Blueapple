@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Link</title>
-</head>
 <body>
+    <h1>جاري التحويل إلى التطبيق المناسب...</h1>
     <script>
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -13,7 +7,8 @@
             window.location.href = "https://play.google.com/store/apps/details?id=com.Linktsp.BlueAppleMarket&pcampaignid=web_share";
         } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
             window.location.href = "https://apps.apple.com/app/id6503000547";
+        } else {
+            window.location.href = "https://yourwebsite.com";
         }
     </script>
 </body>
-</html>
